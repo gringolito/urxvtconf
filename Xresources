@@ -1,9 +1,9 @@
-Xft.lcdfilter: lcddefault
-Xft.dpi: 96
-Xft.antialias: true
-Xft.rgba: rgb
-Xft.hinting: true
-Xft.hintstyle: hintslight
+!Xft.lcdfilter: lcddefault
+!Xft.dpi: 96
+!Xft.antialias: true
+!Xft.rgba: rgb
+!Xft.hinting: true
+!Xft.hintstyle: hintslight
 
 ! Compile xft: Attempt to find a visual with the given bit depth; option -depth.
 URxvt*depth: 32
@@ -15,7 +15,10 @@ URxvt*depth: 32
 URxvt*geometry: 80x28
 
 ! Use the specified colour as the windows background colour [default White]; option
-URxvt*background: [85]#000000
+! transparent
+! URxvt*background: [85]#000000
+! solid
+URxvt*background: #000000
 
 ! Use the specified colour as the windows foreground colour [default Black]; option
 URxvt*foreground: #FFFFFF
@@ -141,7 +144,7 @@ URxvt*scrollWithBuffer: true
 URxvt*scrollTtyKeypress: true
 
 ! Save number lines in the scrollback buffer [default 64]. This resource is limited on
-URxvt*saveLines: 65535
+URxvt*saveLines: 10000
 
 ! Internal border of number pixels. This resource is limited to 100; option -b.
 ! URxvt*internalBorder: number
@@ -266,7 +269,7 @@ URxvt*selection.pattern-idx: perl-regex
 URxvt*keysym.C-f: perl:searchable-scrollback:start
 
 ! Specifies the program to be started with a URL argument. Used by the
-URxvt*url-launcher: /usr/bin/iceweasel
+URxvt*url-launcher: /usr/bin/vivaldi
 
 ! Compile frills: Sets the WM_TRANSIENT_FOR property to the given window id.
 ! URxvt*transient-for: windowid
